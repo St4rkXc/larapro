@@ -1,11 +1,15 @@
 <?php
 
+use App\Http\Controllers\aboutController;
+use App\Http\Controllers\contactController;
+use App\Http\Controllers\galleryController;
+use App\Http\Controllers\homeController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', fn () =>  view('home'));
-Route::get('/about', fn () =>  view('about'));
-Route::get('/contact', fn () =>  view('contact'));
-Route::get('/gallery', fn () =>  view('gallery'));
+Route::get('/', [homeController::class,'__invoke']);
+Route::get('/about', [aboutController::class,'index']);
+Route::get('/contact', [contactController::class,'index']);
+Route::get('/gallery', [galleryController::class,'index']);
 
 Route::get('/user', function () {
     $user = [
