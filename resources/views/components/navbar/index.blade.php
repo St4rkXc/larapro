@@ -13,12 +13,12 @@
                         <x-navbar.nav-link href="/about" :active="request()->is('about')" >About</x-navbar.nav-link>
                         <x-navbar.nav-link href="/contact" :active="request()->is('contact')">Contact</x-navbar.nav-link>
                         <x-navbar.nav-link href="/gallery" :active="request()->is('gallery')">Gallery</x-navbar.nav-link> --}}
-
                         {{-- * Memakai component --}}
                         <x-navbar.nav-link href="/">Home</x-navbar.nav-link>
                         <x-navbar.nav-link href="/about" >About</x-navbar.nav-link>
                         <x-navbar.nav-link href="/contact">Contact</x-navbar.nav-link>
                         <x-navbar.nav-link href="/gallery">Gallery</x-navbar.nav-link>
+                        <x-navbar.nav-link href="/user">User</x-navbar.nav-link>
                     </div>
                 </div>
             </div>
